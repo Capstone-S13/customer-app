@@ -1,6 +1,11 @@
+#the main app 
 import os
 
 from flask import Flask
+from views import *
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
 
 
 def create_app(test_config=None):
